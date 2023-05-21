@@ -78,5 +78,6 @@ class GameManager {
     set attemptNumber(value) {
         this.#attemptNumber = value;
         this.#scoreElement.innerHTML = value;
+        this.#scoreElement.classList.add('changed')
     }
 }
